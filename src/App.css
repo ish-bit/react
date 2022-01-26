@@ -1,0 +1,272 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: lavender;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-wrapper {
+  background-color: rgb(255, 255, 255);
+  min-height: 650px;
+  min-width: 350px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.app-wrapper>div{
+  color: rgb(71, 71, 202);
+display: flex;
+justify-content: center;
+align-items:center;
+flex-direction: column;
+}
+
+.title{
+  color: blueviolet;
+  text-align: center;
+  margin: 80px 0px 40px 0px;
+}
+
+.name,
+.email,
+.password,
+.password2 {
+  margin: 20px;
+  color: rgb(83, 2, 83);
+  font-size: 16px;
+}
+
+.password2 {
+  margin-bottom: 40px;
+}
+
+.input {
+  height: 32px;
+  font-size: 20px;
+  outline: none;
+  width: 100%;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: 2px solid black;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+}
+
+.submit {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-radius: 25px;
+  color: rgb(12, 8, 1);
+  padding: 10px 60px;
+  background: rgb(172, 172, 241);
+  box-shadow: rgb(75, 71, 75);
+  margin: auto;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.form-success {
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+  min-width: 370px;
+  color: rgb(134, 134, 214);
+}
+
+body {
+  background-color: lavender;
+  background-position: left 20%;
+  background-clip: border-box;
+  background-size: cover;
+}
+
+/* Header */
+
+.header {
+  margin-bottom: 12rem;
+  display: inline-block;
+  width: 98vw;
+}
+
+/* Content */
+.content {
+  text-align: center;
+}
+
+.content h1,
+.button {
+  margin-bottom: 2rem;
+}
+
+.content h1 {
+  font-size: 4rem;
+  color: #6c94c2;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: #77abe7;
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #9dc3ff;
+}
+.cta:hover svg {
+  transform: translateX(0);
+}
+.cta:active {
+  transform: scale(0.96);
+}
+
+.image-container{
+  border-color: black;
+  margin-top: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 900px;
+  width:100%;
+}
+.image-container img{
+  width: 449px;
+  height: 430px;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  width: 96%;
+  overflow: hidden;
+}
+
+.footer-nav {
+  text-align: center;
+  list-style: none;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.social-links {
+  list-style: none;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: rgb(128, 152, 206);
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 160%;
+}
+
+.ion-social-github,
+.ion-social-twitter,
+.ion-social-snapchat,
+.ion-social-instagram {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.ion-social-github:hover {
+  color: #000000;
+}
+
+.ion-social-twitter:hover {
+  color: #55acee;
+}
+
+.ion-social-snapchat:hover {
+  color: #fffc00;
+}
+
+.ion-social-instagram:hover {
+  color: #e4405f;
+}
